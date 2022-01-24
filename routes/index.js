@@ -11,18 +11,17 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 
-
 router.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../views/index.html'));
 })
 
 router.get('/joo', (req, res) => {
-    res.send(`this is joo's page`);
+    res.end(`this is joo's page`);
     // res.sendFile(path.join(__dirname, '../views/index.html'));
 })
 
 router.get('/joe', (req, res) => {
-    res.send(`this is joe's page`);
+    res.end(`this is joe's page`);
     // res.sendFile(path.join(__dirname, '../views/index.html'));
 })
 
