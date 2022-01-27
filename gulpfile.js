@@ -10,7 +10,7 @@ function compileSass(done) {
     return (
         gulp.src('sass/**/*.scss') 
         .pipe(sassify({outputStyle: "compressed"}).on('error', sassify.logError)) // run it thru the compiler, and also compress it
-        .pipe(gulp.dest('css'))
+        .pipe(gulp.dest('public/css'))
     ) 
   };
 
